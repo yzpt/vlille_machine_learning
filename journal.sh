@@ -52,3 +52,9 @@ bq extract --destination_format=CSV vlille-gcp-etl:vlille_ml_test.test_ml_3 gs:/
 gsutil cp gs://vlille-gcp-etl-data/test_ml_3.csv test_ml_3.csv
 
 # --> test_ml_3.csv
+
+git init
+git add .
+git commit -m "First commit"
+git remote add origin https://github.com/yzpt/vlille_machine_learning.git
+git push -u origin main
