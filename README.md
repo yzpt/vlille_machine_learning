@@ -121,7 +121,7 @@ plt.show()
 
 ### 3. Prediction visualization
 
-Seems to be a good fit for the decision tree model considering the low coefficient of determination and similarity with average values.
+Seems to be a good fit for the decision tree model considering the low R² and similarity with average values measured.
 
 ## Decision Tree prediction
 
