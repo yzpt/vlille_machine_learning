@@ -1,7 +1,16 @@
-## Machine Learning wih V'lille GCP Dataset
+# Machine Learning wih V'lille GCP Dataset <!-- omit in toc -->
+
+- [1. First attempt with sci-kit learn tree regressor model and quickly cleaned data](#1-first-attempt-with-sci-kit-learn-tree-regressor-model-and-quickly-cleaned-data)
+  - [1.1. Data Preparation](#11-data-preparation)
+  - [1.2. Data Prediction with decision tree](#12-data-prediction-with-decision-tree)
+  - [1.3. Prediction visualization](#13-prediction-visualization)
 
 
-### 1. Data Preparation
+# 1. First attempt with sci-kit learn tree regressor model and quickly cleaned data
+
+Using preprocessed data from [V'Lille GCP](https://github.com/yzpt/vlille_gcp)'s dataset
+
+## 1.1. Data Preparation
 
 ```sh
 gcloud config list
@@ -60,7 +69,7 @@ gsutil cp gs://vlille-gcp-etl-data/test_ml_3.csv test_ml_3.csv
 # --> test_ml_3.csv
 ```
 
-### 2. Data Prediction with decision tree
+## 1.2. Data Prediction with decision tree
 
 Jupyter notebook [nb.ipynb](nb.ipynb) :
 
@@ -119,15 +128,13 @@ plt.legend()
 plt.show()
 ```
 
-### 3. Prediction visualization
+## 1.3. Prediction visualization
 
-Seems to be a good fit for the decision tree model considering the low R² and similarity with average values measured.
-
-## Decision Tree prediction
+* Decision Tree prediction
 
 ![Decision Tree prediction](img/screen_predict.png)
 
-## Average bikes on Monday
+* Average bikes on Monday
 
 ![Average bikes on Monday](img/screen_avg.png)
 
